@@ -22,7 +22,7 @@ export default function KinBuyButton(props) {
       let wallet_and_accounts = await setupWallet(wallet);
 
       if (wallet_and_accounts) {
-        setWallet(wallet_and_accounts.wallet, productionEvironment);
+        setWallet(wallet_and_accounts.wallet);
         window.localStorage.setItem(
           "wallet",
           JSON.stringify(wallet_and_accounts.wallet)
